@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>整活</title>
+  
+  </head>
+  <center>
+	<body>
+		<hr>
+		<a href="http://mchcmofficial.ikkun.ml/index.html">返回主页</a>
+		<hr>
+		<br><h1>点我！不停地点我！</h1><br><br>
+    <button onclick="countClick()">点我</button>
+    <p id="result"></p>
+    
+    <script>
+        var clickCount = 0;
+        function countClick(){
+            clickCount++;
+            if(clickCount === 10){
+                document.getElementById("result").innerHTML = "你是真无聊";
+            } else if(clickCount === 20){
+                document.getElementById("result").innerHTML = "别点了";
+            } else if(clickCount === 30){
+                document.getElementById("result").innerHTML = "还点？";
+            } else if(clickCount === 40){
+                window.location.href = "https://www.bilibili.com/video/BV1uT4y1P7CX/?share_source=copy_web&vd_source=f47e41a383d375cb7f1b25d5cc1abee1";
+            }
+        }
+    </script>
+		<hr>
+		<form action="submit_message.php" method="post">
+         <label for="message">留言树洞，请记得署名：</label>
+         <input type="text" id="message" name="message">
+         <input type="submit" value="提交">
+        </form>
+		<h3><font color="red">请勿一人提交很多次，违者ip地址将会在主页挂出展览（服务器后台查得到你们的ip地址）</font></h3>
+		<hr >
+		
+  </body>
+	</center>
+</html>
